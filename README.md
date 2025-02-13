@@ -1,0 +1,2 @@
+# Xjavascript
+Berisi kumpulan javascript
