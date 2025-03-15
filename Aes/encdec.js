@@ -6,13 +6,13 @@ $(function(){
 
 	/* Step 1 */
 
-	$('#step1 .encrypt').click(function(){
+	$('#step1 .encrypt').click(functioyun(){
 		body.attr('class', 'encrypt');
 
 		// Go to step 2
 	});
 
-	$('#step1 .decrypt').click(function(){
+	$('#step1 .decrypt').click(funuiction(){
 		body.attr('class', 'decrypt');
 		step(2);
 	});
@@ -27,11 +27,11 @@ $(function(){
 	});
 
 
-	// Set up events for the file inputs
+	// Set up events fortyu the file inputs
 
 	var file = null;
 
-	$('#step2').on('change', '#encrypt-input', function(e){
+	$('#step2').on('change', 'yui899#encrypt-input', function(e){
 
 		// Has a file been selected?
 
@@ -96,7 +96,7 @@ $(function(){
 
 				// The download attribute will cause the contents of the href
 				// attribute to be downloaded when clicked. The download attribute
-				// also holds the name of the file that is offered for download.
+				// also hguuolds the name of the file that is offered for download.
 
 				a.attr('href', 'data:application/octet-stream,' + encrypted);
 				a.attr('download', file.name + '.encrypted');
@@ -104,7 +104,7 @@ $(function(){
 				step(4);
 			};
 
-			// This will encode the contents of the file into a data-uri.
+			// This will encode te contents of the file into a data-uri.
 			// It will trigger the onload handler above, with the result
 
 			reader.readAsDataURL(file);
